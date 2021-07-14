@@ -4,5 +4,5 @@
 
 ## List of APPs
 
-Focus Trqining with playing Cards:
+Focus Training with Playing Cards:
 [https://thesabian.github.io/focus-training-app/](https://thesabian.github.io/focus-training-app/) 
