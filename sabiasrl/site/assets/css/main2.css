@@ -213,7 +213,7 @@ h6 {
   font-size: 0.6em;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 860px) {
   h1 {
     font-size: 2em;
   }
@@ -1040,7 +1040,7 @@ hr.major {
     padding-top: 3em;
   }
 }
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 860px) {
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -1761,7 +1761,7 @@ button:hover:active:after,
     border-top-width: 0 !important;
   }
 }
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 860px) {
   .features section {
     padding: 2.5em 1.5em 0.1em 5.5em;
   }
@@ -2422,7 +2422,7 @@ header h6 + p {
     padding-top: 0;
   }
 }
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 860px) {
   .split > * {
     margin: 3em 0 0 0;
     padding: 3em 0 0 0;
@@ -2538,7 +2538,7 @@ body.is-ie .spotlights > section {
     transform: translateY(1em);
   }
 }
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 860px) {
   .spotlights > section > .image {
     height: 50vh;
     min-height: 15em;
@@ -2622,7 +2622,7 @@ table.alt tfoot {
     width: 100%;
   }
 }
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 860px) {
   .wrapper > .inner {
     padding: 3em 2em 1em 2em;
   }
@@ -2674,7 +2674,7 @@ body.is-ie .wrapper.fullscreen {
     height: calc(100vh - 2.5em);
   }
 }
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 860px) {
   .wrapper.fullscreen {
     padding: 2em 0;
     min-height: 0;
@@ -2782,7 +2782,7 @@ body.is-ie .wrapper.fullscreen {
 #header > nav > ul > li a.active {
   color: #ffffff;
 }
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 860px) {
   #header {
     padding: 1em 2em;
   }
@@ -2820,7 +2820,7 @@ body.is-ie .wrapper.fullscreen {
     padding-top: 3.5em;
   }
 }
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 860px) {
   #sidebar + #wrapper {
     padding-top: 0;
   }
@@ -3149,7 +3149,7 @@ body.is-preload #sidebar nav ul li {
     background-color: #121F2B;
   }
 }
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 860px) {
   #sidebar {
     display: none;
   }
@@ -3171,7 +3171,7 @@ body.is-preload #sidebar nav ul li {
     display: none;
   }
 }
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 860px) {
   #intro p {
     font-size: 1em;
   }
