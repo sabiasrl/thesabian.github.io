@@ -134,42 +134,45 @@
 		<section id="three" class="wrapper style1 fade-up">
 			<div class="inner">
 				<h2>Get in touch</h2>
-				<p class="icon solid fa-tools"> Under construction.</p>
 				<div class="split style1">
 					<section>
-						<form method="post" action="#">
+						<form id="myForm" method="post" action="mailto:info@sabiasrl.com" enctype="text/plain">
 							<div class="fields">
 								<div class="field half">
 									<label for="name">Name</label>
-									<input type="text" name="name" id="name" disabled />
+									<input type="text" name="name" id="name" />
 								</div>
 								<div class="field half">
 									<label for="email">Email</label>
-									<input type="text" name="email" id="email" disabled />
+									<input type="text" name="email" id="email" />
 								</div>
 								<div class="field">
 									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="5" disabled></textarea>
+									<textarea name="message" id="message" rows="5"></textarea>
 								</div>
 							</div>
 							<ul class="actions">
-								<li><a href="" class="button submit disabled">Send Message</a></li>
+								<li><a href="#" class="button submit" onclick="sendForm()" >Send Message</a></li>
 							</ul>
 						</form>
 					</section>
 					<section>
 						<ul class="contact">
-							<li><h3>SABIA srl </h3></li>
+							<li>
+								<h3>SABIA srl </h3>
+							</li>
 							<li>
 								<h3>Address</h3>
 								<span>Avenue Brugmann, 324<br />
 									1180 Uccle<br />
 									BELGIUM</span>
 							</li>
-							<li><h3>TVA </h3> BE 0757.563.070</li>
+							<li>
+								<h3>TVA </h3> BE 0757.563.070
+							</li>
 							<li>
 								<h3>Email</h3>
-								<a href="#"> info@sabiasrl.com</a>
+								<a href="mailto:info@sabiasrl.com"> info@sabiasrl.com</a>
 							</li>
 							<li>
 								<h3>Phone</h3>
@@ -218,6 +221,23 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init("user_p4GqnEP2EulFD39ILEgtc");
+		})();
+	</script>
+	<script type="text/javascript">
+		function sendForm() {
+			emailjs.sendForm('service_wnokvc7', 'template_0ttog1w', '#myForm')
+				.then(function (response) {
+					console.log('SUCCESS!', response.status, response.text);
+				}, function (error) {
+					console.log('FAILED...', error);
+				});
+		};
+	</script>
+
 
 </body>
 
