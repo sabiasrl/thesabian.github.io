@@ -15,16 +15,24 @@
 
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	<script language="javascript">
-		
-		if (!window.location.search.substring(1) == "full=true") { // do not redirect if querystring is ?full=true
-			if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(
-					/Android/i) || navigator.userAgent.match(/Blackberry/i) || navigator.userAgent.match(
-				/WebOs/i)) { // detect mobile browser
-				Response.redirect("https://thesabian.github.io/sabiasrl/site/home2.html");
-					//window.location.replace("/homemobile.html"); // redirect if mobile browser detected
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.min.js"></script>
+	<script>
+		window.addEventListener("load", function () {
+			var md = new MobileDetect(window.navigator.userAgent);
+			if(md.mobile()) {
+				if(md.phone()) {
+					Response.redirect("https://thesabian.github.io/sabiasrl/site/home2.html");
+				}
 			}
-		}
+			// console.log(md.mobile()); // null if not mobile device
+			// console.log(md.phone()); // null if not smartphone
+			// console.log(md.tablet()); // null if not tablet
+			// console.log(md.userAgent()); // Browser used. Chrome, Firefox, Dolfin, etc...
+			// console.log(md.os()); // Android, iOS, Windwows, OSX, or Linux
+			// console.log(md.version('Webkit')); // Webkit version
+			// console.log(md.versionStr('Build')); // Build
+		});
 	</script>
 </head>
 
@@ -56,9 +64,9 @@
 					<li style="list-style: none">Websites development</li>
 					<li style="list-style: none">Mobile apps for <a
 							href="https://apps.apple.com/us/developer/daniele-sabia/id1576114681"
-							target="_blank">iOS</a>
+							target="_top">iOS</a>
 						and <a href="https://play.google.com/store/apps/developer?id=SABIA+srl"
-							target="_blank">Android</a>.</li>
+							target="_top">Android</a>.</li>
 				</ul>
 				<ul class="actions">
 					<li><a href="#one" class="button scrolly">Learn more</a></li>
@@ -183,7 +191,7 @@
 							</li>
 							<li>
 								<h3>Email</h3>
-								<a href="mailto:info@sabiasrl.com"> info@sabiasrl.com</a>
+								<a target="_top" href="mailto:info@sabiasrl.com"> info@sabiasrl.com</a>
 							</li>
 							<li>
 								<h3>Phone</h3>
