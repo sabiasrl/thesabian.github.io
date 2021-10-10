@@ -719,7 +719,7 @@ $grey: #999;
 }
 
 .contact .main_form .send:hover {
-     background-color: #41c365;
+     background-color: #3c495e;
      transition: ease-in all 0.5s;
      color: #fff;
 }
