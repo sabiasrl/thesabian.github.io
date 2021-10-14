@@ -35,14 +35,14 @@ html {
 
 body {
      color: #666666;
-     font-size: 14px;
+     font-size: 56px;
      font-family: 'Roboto', sans-serif;
      line-height: 1.80857;
      font-weight: normal;
 }
 
 a {
-     color: #3c495e;
+     color: #1f1f1f;
      text-decoration: none !important;
      outline: none !important;
      -webkit-transition: all .3s ease-in-out;
@@ -69,27 +69,27 @@ h6 {
 }
 
 h1 {
-     font-size: 24px
+     font-size: 96px
 }
 
 h2 {
-     font-size: 22px
+     font-size: 88px
 }
 
 h3 {
-     font-size: 18px
+     font-size: 72px
 }
 
 h4 {
-     font-size: 16px
+     font-size: 64px
 }
 
 h5 {
-     font-size: 14px
+     font-size: 56px
 }
 
 h6 {
-     font-size: 13px
+     font-size: 32px
 }
 
 *,
@@ -106,7 +106,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-     color: #3c495e;
+     color: #212121;
      text-decoration: none!important;
      opacity: 1
 }
@@ -126,8 +126,8 @@ ol {
 p {
      margin: 0px;
      font-weight: 300;
-     font-size: 15px;
-     line-height: 24px;
+     font-size: 60px;
+     line-height: 96px;
 }
 
 b {
@@ -136,7 +136,7 @@ b {
 }
 
 a {
-     color: #3c495e;
+     color: #222222;
      text-decoration: none;
      outline: none !important;
 }
@@ -159,6 +159,14 @@ img {
 
  :focus {
      outline: 0;
+}
+
+.btn-custom {
+     margin-top: 20px;
+     background-color: transparent !important;
+     border: 2px solid #ddd;
+     padding: 12px 40px;
+     font-size: 16px;
 }
 
 .lead {
@@ -284,11 +292,11 @@ ul.costomer li a {
 /*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
 
 .header_bg {
-     background: url(../images/banner.png);
+     background: url(../images/banner_mobile_70.png);
      background-repeat: no-repeat;
-     background-size: cover;
-     background-size: cover;
-     background-position: center;
+     background-size: contain;
+     background-position-x: center;
+     background-position-y: bottom;
 }
 
 .header {
@@ -344,7 +352,7 @@ ul.costomer li a {
 
 .text-bg a {
      font-size: 16px;
-     background-color: #3c495e;
+     background-color: #1f1716;
      color: #fff;
      padding: 10px 0px;
      width: 100%;
@@ -373,11 +381,11 @@ ul.costomer li a {
 }
 
 .titlepage h2 {
-     font-size: 45px;
+     font-size: 75px;
      color: #fff;
      line-height: 40px;
      font-weight: bold;
-     padding: 0;
+     padding-bottom: 50px;
 }
 
 
