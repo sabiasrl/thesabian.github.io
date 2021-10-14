@@ -292,7 +292,7 @@ ul.costomer li a {
 /*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
 
 .header_bg {
-     background: url(../images/banner_mobile_70.png);
+     background: url(../images/banner_mobile_85.png);
      background-repeat: no-repeat;
      background-size: contain;
      background-position-x: center;
@@ -783,8 +783,8 @@ $grey: #999;
 
 .footer p {
      color: #1e1e1e;
-     font-size: 18px;
-     line-height: 22px;
+     font-size: 36px;
+     line-height: 44px;
      text-align: center;
 }
 
