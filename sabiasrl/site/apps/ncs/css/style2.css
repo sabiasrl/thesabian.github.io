@@ -296,7 +296,7 @@ ul.costomer li a {
      background-repeat: no-repeat;
      background-size: contain;
      background-position-x: center;
-     background-position-y: bottom;
+     background-position-y: 1040px;
 }
 
 .header {
@@ -377,7 +377,7 @@ ul.costomer li a {
 
 .titlepage {
      text-align: center;
-     padding-bottom: 60px;
+     padding-bottom: 15px;
 }
 
 .titlepage h2 {
