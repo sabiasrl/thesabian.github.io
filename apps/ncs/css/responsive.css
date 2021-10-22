@@ -106,7 +106,7 @@
 
     .header_bg {
         /* background: #d1e2ff; */
-        background: url(../images/banner_85.png);
+        background: url(../images/banner_70.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: top;
@@ -115,7 +115,7 @@
     .text-bg {
         max-width: 509px;
         float: none;
-        padding-left: 100px;
+        /* padding-left: 100px; */
     }
 
     .cont span {
@@ -148,12 +148,16 @@
     }
 
     .header_bg {
-        background: #d1e2ff;
+        /* background: #d1e2ff; */
+        background: url(../images/banner_85.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
     }
 
     .text-bg {
         float: none;
-        padding-left: 40px;
+        padding-left: 10px;
     }
 
     .text-bg h1 {
