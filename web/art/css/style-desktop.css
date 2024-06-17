@@ -162,7 +162,11 @@
 		{
 			margin: 0 0 0 5em;
 		}
-		
+		.feature-list .relaxed-margin
+		{
+			margin: 0 0 0 3em;
+		}
+
 		.feature-list-small
 		{
 		}
@@ -368,7 +372,7 @@
 		{
 			display: inline-block;
 			border-radius: 0.35em;
-			box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.25);
+			box-shadow: inset 0px 0px 1px 1px #282b34;
 			padding: 0 1.5em 0 1.5em;
 		}
 
@@ -383,8 +387,8 @@
 			#nav > ul > li > span
 			{
 				display: block;
-				color: #eee;
-				color: rgba(255,255,255,0.75);
+				color: #282b34;
+				/* color: rgba(255,255,255,0.75); */
 				text-transform: uppercase;
 				text-decoration: none;
 				font-size: 0.7em;
@@ -403,7 +407,7 @@
 			#nav > ul > li.active > a,
 			#nav > ul > li.active > span
 			{
-				color: #fff;
+				color: #282b34;
 			}
 
 	.dropotron

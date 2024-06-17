@@ -25,6 +25,9 @@
 
 <body class="homepage">
 
+	<div class="preloader js-preloader flex-center">
+	</div>
+
 	<!-- Header Wrapper -->
 	<div id="header-wrapper" class="wrapper">
 		<div class="container">
@@ -36,13 +39,13 @@
 						<br />
 						<div style="width:100%;text-align:right; position: absolute;padding-right:30px;"
 							class="mobile-hide">
-							<a href="index.php?lang=it" class="image">
+							<a href="it.html" class="image">
 								<img src="images/it.png" alt="it" />
 							</a>
-							<a href="index.php?lang=en" class="image">
+							<a href="en.html" class="image">
 								<img src="images/en.png" alt="en" />
 							</a>
-							<a href="index.php?lang=fr" class="image">
+							<a href="fr.html" class="image">
 								<img src="images/fr.png" alt="fr" />
 							</a>
 						</div>
@@ -50,6 +53,8 @@
 						<!-- Logo -->
 						<div id="logo">
 
+							<br class="mobile-hide" />
+							<br class="mobile-hide" />
 							<br class="mobile-hide" />
 							<br class="mobile-hide" />
 							<br class="mobile-hide" />
@@ -77,9 +82,9 @@
 
 								<li>
 									<ul>
-										<li><a href="index.php?lang=it">Italiano</a></li>
-										<li><a href="index.php?lang=en">English</a></li>
-										<li><a href="index.php?lang=fr">Français</a></li>
+										<li><a href="it.html">Italiano</a></li>
+										<li><a href="en.html">English</a></li>
+										<li><a href="fr.html">Français</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -96,7 +101,7 @@
 	<!-- /Header Wrapper -->
 
 	<!-- Intro Wrapper -->
-	<div id="intro-wrapper" class="wrapper wrapper-style2">
+	<div id="intro-wrapper" class="wrapper wrapper-style22">
 		<div class="title" id="titleServizi">OUR SERVICES</div>
 		<div class="container">
 			<div class="row">
@@ -255,10 +260,12 @@
 											<section>
 												<h3>
 													<span>
-														<span class="mobile-hide" style="padding-left: 40px;"></span>
-														<img src="images/bluestar.png" width="20" height="20"/>
+														<span class="mobile-hide" style="padding-left: 32px;"></span>
+														<img src="images/bluestar.png" width="20" height="20" />
 														<span class="mobile-hide" style="padding-right: 14px;"></span>
-														<font color="#484d55" style="vertical-align: top;">GIOVANNA CAROTTI</font>
+														<span>
+															<font color="#484d55">GIOVANNA CAROTTI</font>
+														</span>
 													</span>
 												</h3>
 												<p><b>Over thirty years </b>of experience in transportation, packing and
@@ -277,10 +284,12 @@
 										<div class="6u">
 											<section>
 												<h3>
-													<span class="mobile-hide" style="padding-left: 40px;"></span>
-													<img src="images/bluestar.png" width="20" height="20"/>
-													<span class="mobile-hide" style="padding-right: 14px;"></span>
-													<font color="#484d55" style="vertical-align: top;">DANIELA PICCOLO</font>
+													<span>
+														<span class="mobile-hide" style="padding-left: 40px;"></span>
+														<img src="images/bluestar.png" width="20" height="20" />
+														<span class="mobile-hide" style="padding-right: 14px;"></span>
+														<font color="#484d55">DANIELA PICCOLO</font>
+													</span>
 												</h3>
 												<p><b>Longstanding experience </b>in the area of transportation, packing
 													and installation of works of art.<br />Qualified work experience
@@ -395,31 +404,28 @@
 																-->
 										<div class="4u">
 											<section id="contactsGiovanna">
-												<p><b>
+												<p class="relaxed-margin"><b>
 														<font color="white">Giovanna Carotti</font>
 													</b>
 												</p>
-												<p class="icon icon-envelope">
+												<p class="icon icon-envelope relaxed-margin">
 													<font color="white">giovanna@artmovingconsulting.it</font>
 												</p>
-												<p class="icon icon-phone">
-													+39 333 2521541
-												</p>
-												<p class="icon icon-phone">
+												<p class="icon icon-phone relaxed-margin">
 													+39 333 3237615
 												</p>
 											</section>
 										</div>
 										<div class="4u">
 											<section id="contactsDaniela">
-												<p><b>
+												<p class="relaxed-margin"><b>
 														<font color="white">Daniela Piccolo</font>
 													</b>
 												</p>
-												<p class="icon icon-envelope">
+												<p class="icon icon-envelope relaxed-margin">
 													<font color="white">daniela@artmovingconsulting.it</font>
 												</p>
-												<p class="icon icon-phone">
+												<p class="icon icon-phone relaxed-margin">
 													+39 331 9101943
 												</p>
 											</section>
@@ -453,9 +459,9 @@
 					<!-- Copyright -->
 					<div id="copyright">
 						<span>
-							&copy; Copyright 2013-2014 &nbsp;&nbsp;&nbsp; <font color="white">ArtMoving Consulting sas
+							&copy; Copyright 2013-2022 &nbsp;&nbsp;&nbsp; <font color="white">ArtMoving Consulting sas
 							</font> &nbsp;&nbsp;&nbsp; P.IVA/VAT: <font color="white">IT04029960400</font>
-							&nbsp;&nbsp;&nbsp; <font color="white">info@artmovingconsulting.it </font>
+							&nbsp;&nbsp;&nbsp; 
 						</span>
 						<span>
 							<font style="font-size:9px;"> thanks to</font> <br />
@@ -471,6 +477,11 @@
 	</div>
 	<!-- /Footer Wrapper -->
 
+	<script src="js/jquery.preloadinator.min.js"></script>
+	<script>
+		$('.js-preloader').preloadinator({
+			minTime: 200
+		});
+	</script>
 </body>
-
 </html>
