@@ -34,7 +34,8 @@ Credits:
 
 
 COMPILE SASS
-
+```sh
 sass source/stylesheets/index.scss build/stylesheets/index.css
 
 sass assets/sass/main.scss assets/css/main2.css
+```
