@@ -124,9 +124,14 @@
 
 		}
 
-	// Scrolly.
+	// Scrolly (smooth in-page scroll; ease-out cubic, no stagger — see main2.css for section fades).
+		$.easing.easeOutCubic = function (x, t, b, c, d) {
+			return c * ((t = t / d - 1) * t * t + 1) + b;
+		};
+
 		$('.scrolly').scrolly({
-			speed: 1000,
+			speed: 680,
+			easing: 'easeOutCubic',
 			offset: function() {
 
 				// If <=large, >small, and sidebar is present, use its height as the offset.
