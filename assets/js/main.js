@@ -49,6 +49,13 @@
 
 			var $sidebar_a = $sidebar.find('a');
 
+			// Mobile: slide-over panel (see layout/_sidebar.scss); util.js .panel()
+			$sidebar.panel({
+				hideOnEscape: true,
+				hideOnSwipe: true,
+				side: 'left'
+			});
+
 			$sidebar_a
 				.addClass('scrolly')
 				.on('click', function() {
@@ -58,6 +65,10 @@
 					// External link? Bail.
 						if ($this.attr('href').charAt(0) != '#')
 							return;
+
+					// Close mobile overlay after choosing a section (hash navigation).
+						if (breakpoints.active('<=small'))
+							$sidebar.removeClass('visible');
 
 					// Deactivate all links.
 						$sidebar_a.removeClass('active');

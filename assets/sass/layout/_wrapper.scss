@@ -28,3 +28,17 @@
 			}
 		}
 	}
+
+	/* Dim main content when mobile nav panel is open */
+	@include breakpoint('<=small') {
+		#sidebar.visible + #wrapper {
+			&::before {
+				background: rgba(0, 0, 0, 0.45);
+				content: '';
+				display: block;
+				inset: 0;
+				position: fixed;
+				z-index: 10001;
+			}
+		}
+	}

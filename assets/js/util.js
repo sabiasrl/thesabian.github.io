@@ -266,8 +266,9 @@
 
 		// Body.
 
-			// Event: Hide panel on body click/tap.
-				$body.on('click touchend', function(event) {
+			// Event: Hide panel on body click (touchend omitted: on iOS it fires before
+			// the toggle's synthetic click and re-opens the panel after _hide runs).
+				$body.on('click', function(event) {
 					$this._hide(event);
 				});
 
