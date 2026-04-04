@@ -3414,15 +3414,15 @@ body.is-preload #sidebar nav ul li {
 #web-mobile-apps section .row > .col-1 > a .icon {
   line-height: 1;
 }
-#web-mobile-apps > .inner > ul.sme-list {
+#sme-seo ul.sme-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-#web-mobile-apps > .inner > ul.sme-list li {
+#sme-seo ul.sme-list li {
   margin: 0.45rem 0;
 }
-#web-mobile-apps > .inner > ul.sme-list a {
+#sme-seo ul.sme-list a {
   border: solid 1px rgba(74, 222, 128, 0.22);
   border-radius: 0.5em;
   color: #ecfdf5;
@@ -3431,14 +3431,14 @@ body.is-preload #sidebar nav ul li {
   padding: 0.75em 1em;
   transition: border-color 0.25s ease, background 0.25s ease;
 }
-#web-mobile-apps > .inner > ul.sme-list a:hover {
+#sme-seo ul.sme-list a:hover {
   background: rgba(4, 18, 10, 0.62);
   border-color: rgba(0, 204, 68, 0.4);
 }
-#web-mobile-apps > .inner > ul.sme-list .sme-name {
+#sme-seo ul.sme-list .sme-name {
   display: block;
 }
-#web-mobile-apps > .inner > ul.sme-list .sme-url {
+#sme-seo ul.sme-list .sme-url {
   border-bottom: none;
   color: rgba(187, 247, 208, 0.92);
   display: block;
@@ -3448,8 +3448,11 @@ body.is-preload #sidebar nav ul li {
   margin-top: 0.35em;
   word-break: break-all;
 }
-#web-mobile-apps > .inner > ul.sme-list a:hover .sme-url {
+#sme-seo ul.sme-list a:hover .sme-url {
   color: rgba(190, 250, 210, 0.95);
+}
+#sme-seo .sme-list-intro {
+  margin-bottom: 1em;
 }
 
 .wrapper.fullscreen {
