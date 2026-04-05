@@ -3375,18 +3375,6 @@ body.is-preload #sidebar nav ul li {
   width: auto;
 }
 
-#web-mobile-apps h3.major {
-  border-bottom: solid 1px rgba(74, 222, 128, 0.22);
-  color: #ecfdf5;
-  font-size: 0.8rem;
-  letter-spacing: 0.16em;
-  margin: 2.5rem 0 1rem 0;
-  padding-bottom: 0.65em;
-  text-transform: uppercase;
-}
-#web-mobile-apps h3.major:first-of-type {
-  margin-top: 0;
-}
 #web-mobile-apps section .row {
   align-items: center;
 }
