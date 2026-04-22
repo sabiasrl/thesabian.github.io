@@ -3464,7 +3464,7 @@ body.page-web #header {
 .portfolio-gallery {
   display: grid;
   gap: 1.25rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   margin-top: 1.25rem;
 }
 .portfolio-card {
@@ -3479,12 +3479,14 @@ body.page-web #header {
   box-shadow: 0 0.7em 1.6em rgba(0, 0, 0, 0.26);
   transform: translateY(-3px);
 }
-.portfolio-card a {
+.portfolio-card-link {
   border-bottom: none;
   color: inherit;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-.portfolio-card img {
+.portfolio-card-favicon {
   background: rgba(236, 253, 245, 0.95);
   border-radius: 0.6em;
   display: block;
@@ -3495,7 +3497,24 @@ body.page-web #header {
   width: 4.25rem;
 }
 .portfolio-card-content {
-  padding: 0.85em 1em 1em;
+  flex: 0 0 auto;
+  padding: 0.35em 1em 0.5em;
+}
+.portfolio-card-mobile-wrap {
+  flex: 1 1 auto;
+  margin-top: auto;
+  padding: 0 0.85rem 0.95rem;
+}
+.portfolio-card-mobile {
+  aspect-ratio: 390 / 844;
+  border: solid 1px rgba(0, 0, 0, 0.28);
+  border-radius: 0.65rem;
+  box-shadow: 0 0.45em 1.1em rgba(0, 0, 0, 0.3);
+  display: block;
+  max-height: min(48vh, 380px);
+  object-fit: cover;
+  object-position: top center;
+  width: 100%;
 }
 .portfolio-card-title {
   color: #ecfdf5;
