@@ -4994,6 +4994,30 @@ body.page-web .portfolio-card-favicon {
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
 }
 
+/* Web portfolio language switcher */
+#header .lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-left: 0.5rem;
+  font-size: 0.85em;
+  letter-spacing: 0.04em;
+}
+
+#header .lang-switch a {
+  opacity: 0.72;
+  padding: 0.15rem 0.25rem;
+}
+
+#header .lang-switch a.is-active,
+#header .lang-switch a:hover {
+  opacity: 1;
+}
+
+#header .lang-switch span[aria-hidden="true"] {
+  opacity: 0.45;
+}
+
 /* Top hero content panel for readability */
 #intro > .inner {
   background: linear-gradient(
