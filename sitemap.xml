@@ -11,6 +11,16 @@
 		<priority>0.6</priority>
 	</url>
 	<url>
+		<loc>https://www.sabiasrl.com/web.html</loc>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>https://www.sabiasrl.com/web-it.html</loc>
+		<changefreq>weekly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
 		<loc>https://www.sabiasrl.com/apps/ncs/</loc>
 		<changefreq>yearly</changefreq>
 		<priority>0.7</priority>
