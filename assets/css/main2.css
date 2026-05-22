@@ -2773,11 +2773,14 @@ body.is-ie .wrapper.fullscreen {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  background-color: #0e1c12;
-  background-image: radial-gradient(ellipse 120% 90% at 85% 15%, rgba(0, 204, 68, 0.11) 0%, transparent 52%), radial-gradient(ellipse 90% 60% at 12% 90%, rgba(0, 160, 55, 0.08) 0%, transparent 44%), url("images/intro.svg");
-  background-position: center, center, top right;
+  background-color: #0d0e12;
+  background-image:
+    radial-gradient(ellipse 110% 85% at 85% 12%, rgba(154, 149, 176, 0.16) 0%, transparent 55%),
+    radial-gradient(ellipse 90% 60% at 10% 88%, rgba(111, 106, 134, 0.11) 0%, transparent 48%),
+    var(--sabia-hero-image, url("../../images/bg-hero-sabia-srl.jpg"));
+  background-position: center, center, center;
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: cover, cover, 100% 100%;
+  background-size: cover, cover, cover;
   cursor: default;
   padding: 1.75em 2em;
 }
@@ -3322,19 +3325,25 @@ body.is-preload #sidebar nav ul li {
 /* Intro */
 #intro {
   background-attachment: scroll;
-  background-color: #0e1c12;
-  background-image: radial-gradient(ellipse 100% 70% at 85% 15%, rgba(0, 204, 68, 0.14) 0%, transparent 52%), radial-gradient(ellipse 80% 50% at 10% 90%, rgba(0, 160, 55, 0.12) 0%, transparent 45%), url("images/intro.svg");
-  background-position: center, center, top right;
+  background-color: #0d0e12;
+  background-image:
+    radial-gradient(ellipse 110% 85% at 85% 12%, rgba(154, 149, 176, 0.16) 0%, transparent 55%),
+    radial-gradient(ellipse 90% 60% at 10% 88%, rgba(111, 106, 134, 0.11) 0%, transparent 48%),
+    var(--sabia-hero-image, url("../../images/bg-hero-sabia-srl.jpg"));
+  background-position: center, center, center;
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: cover, cover, 100% 100%;
+  background-size: cover, cover, cover;
 }
 body.page-web #header {
   background-attachment: scroll;
-  background-color: #0e1c12;
-  background-image: radial-gradient(ellipse 100% 70% at 85% 15%, rgba(0, 204, 68, 0.14) 0%, transparent 52%), radial-gradient(ellipse 80% 50% at 10% 90%, rgba(0, 160, 55, 0.12) 0%, transparent 45%), url("images/intro.svg");
-  background-position: center, center, top right;
+  background-color: #0d0e12;
+  background-image:
+    radial-gradient(ellipse 110% 85% at 85% 12%, rgba(154, 149, 176, 0.16) 0%, transparent 55%),
+    radial-gradient(ellipse 90% 60% at 10% 88%, rgba(111, 106, 134, 0.11) 0%, transparent 48%),
+    var(--sabia-hero-image, url("../../images/bg-hero-sabia-srl.jpg"));
+  background-position: center, center, center;
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: cover, cover, 100% 100%;
+  background-size: cover, cover, cover;
 }
 #intro p {
   font-size: clamp(1.05rem, 0.98rem + 0.4vw, 1.25em);
@@ -3659,11 +3668,11 @@ textarea:focus {
 }
 #intro .intro-stack-section {
   display: flex;
-  flex: 1 1 auto;
+  flex: 0 0 auto;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 1em;
-  min-height: min(28vh, 18rem);
+  min-height: 0;
   width: 100%;
 }
 #intro .intro-stack-note {
@@ -3677,9 +3686,9 @@ textarea:focus {
   width: 100%;
 }
 .tech-stack-grid--intro {
-  align-content: stretch;
-  flex: 1 1 auto;
-  grid-auto-rows: minmax(4.5rem, 1fr);
+  align-content: start;
+  flex: 0 0 auto;
+  grid-auto-rows: auto;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-bottom: 0.25em;
   margin-left: 0;
@@ -3700,23 +3709,26 @@ textarea:focus {
 }
 @media screen and (min-width: 1100px) {
   .tech-stack-grid--intro {
-    grid-template-columns: repeat(14, minmax(0, 1fr));
+    grid-template-columns: repeat(15, minmax(0, 1fr));
   }
 }
 .tech-stack-grid--intro .tech-stack-item {
+  aspect-ratio: 1;
+  background: rgba(4, 18, 10, 0.45);
+  border-color: rgba(74, 222, 128, 0.22);
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  height: auto;
   justify-content: center;
-  min-height: 4.5rem;
+  max-height: none;
+  min-height: 0;
   padding: 0.75rem 0.4rem;
+  width: 100%;
 }
-@media screen and (min-width: 736px) {
-  .tech-stack-grid--intro {
-    grid-auto-rows: minmax(5.25rem, 1fr);
-  }
-  .tech-stack-grid--intro .tech-stack-item {
-    min-height: 0;
-  }
+
+.tech-stack-grid--intro .tech-stack-label {
+  color: rgba(220, 252, 231, 0.92);
 }
 .tech-stack-grid--intro .tech-stack-icon-wrap .icon {
   font-size: 1.55rem;
@@ -3793,6 +3805,9 @@ textarea:focus {
 .tech-stack-grid--intro .tech-stack-item--mongodb .tech-stack-svg--mongodb {
   color: #47a248;
 }
+.tech-stack-grid--intro .tech-stack-item--kafka .tech-stack-svg--kafka {
+  color: #e5e5e5;
+}
 .tech-stack-grid--intro .tech-stack-item--github .tech-stack-icon-wrap .icon {
   color: #f0f6fc;
 }
@@ -3805,9 +3820,11 @@ textarea:focus {
   padding: 0;
 }
 .tech-stack-item {
+  aspect-ratio: 1;
   background: rgba(4, 18, 10, 0.45);
   border: solid 1px rgba(74, 222, 128, 0.22);
   border-radius: 0.5em;
+  box-sizing: border-box;
   padding: 0.85rem 0.4rem;
   text-align: center;
 }
@@ -4018,12 +4035,12 @@ body.page-web #header,
 #header {
   background-color: #0d0e12;
   background-image:
-    radial-gradient(ellipse 105% 80% at 82% 12%, rgba(127, 116, 160, 0.11) 0%, transparent 56%),
-    radial-gradient(ellipse 82% 55% at 12% 88%, rgba(165, 158, 184, 0.06) 0%, transparent 48%),
-    url("images/intro.svg");
-  background-position: center, center, top right;
+    radial-gradient(ellipse 110% 85% at 85% 12%, rgba(154, 149, 176, 0.16) 0%, transparent 55%),
+    radial-gradient(ellipse 90% 60% at 10% 88%, rgba(111, 106, 134, 0.11) 0%, transparent 48%),
+    var(--sabia-hero-image, url("../../images/bg-hero-sabia-srl.jpg"));
+  background-position: center, center, center;
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: cover, cover, 100% 100%;
+  background-size: cover, cover, cover;
 }
 
 #footer,
@@ -4338,14 +4355,14 @@ h2.major:after {
 #intro,
 body.page-web #header,
 #header {
-  background-color: #f7f8fc;
+  background-color: #0d0e12;
   background-image:
-    radial-gradient(ellipse 120% 90% at 85% 12%, rgba(123, 111, 211, 0.13) 0%, transparent 54%),
-    radial-gradient(ellipse 90% 60% at 10% 88%, rgba(184, 177, 223, 0.1) 0%, transparent 48%),
-    url("images/intro.svg");
-  background-position: center, center, top right;
+    radial-gradient(ellipse 110% 85% at 85% 12%, rgba(154, 149, 176, 0.16) 0%, transparent 55%),
+    radial-gradient(ellipse 90% 60% at 10% 88%, rgba(111, 106, 134, 0.11) 0%, transparent 48%),
+    var(--sabia-hero-image, url("../../images/bg-hero-sabia-srl.jpg"));
+  background-position: center, center, center;
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: cover, cover, 100% 100%;
+  background-size: cover, cover, cover;
 }
 
 /* Main section surfaces */
@@ -4654,14 +4671,14 @@ a:hover {
 #intro,
 body.page-web #header,
 #header {
-  background-color: #f2f4f8;
+  background-color: #0d0e12;
   background-image:
-    radial-gradient(ellipse 110% 85% at 85% 12%, rgba(154, 149, 176, 0.18) 0%, transparent 55%),
-    radial-gradient(ellipse 90% 60% at 10% 88%, rgba(111, 106, 134, 0.12) 0%, transparent 48%),
-    url("images/intro.svg");
-  background-position: center, center, top right;
+    radial-gradient(ellipse 110% 85% at 85% 12%, rgba(154, 149, 176, 0.16) 0%, transparent 55%),
+    radial-gradient(ellipse 90% 60% at 10% 88%, rgba(111, 106, 134, 0.11) 0%, transparent 48%),
+    var(--sabia-hero-image, url("../../images/bg-hero-sabia-srl.jpg"));
+  background-position: center, center, center;
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: cover, cover, 100% 100%;
+  background-size: cover, cover, cover;
 }
 
 #header {
@@ -4872,14 +4889,15 @@ body.page-web .portfolio-intro {
   padding: 0.95rem 1.1rem;
 }
 
-/* Use Sabia hero background image on top sections */
+/* Hero + inner-page header: dark base, ellipse accents, photo */
 #intro,
 body.page-web #header,
 #header {
+  background-color: #0d0e12;
   background-image:
     radial-gradient(ellipse 110% 85% at 85% 12%, rgba(154, 149, 176, 0.16) 0%, transparent 55%),
     radial-gradient(ellipse 90% 60% at 10% 88%, rgba(111, 106, 134, 0.11) 0%, transparent 48%),
-    var(--sabia-hero-image);
+    var(--sabia-hero-image, url("../../images/bg-hero-sabia-srl.jpg"));
   background-position: center, center, center;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: cover, cover, cover;
@@ -5423,6 +5441,6 @@ body.page-web #sidebar .lang-switch span[aria-hidden="true"] {
 }
 
 #intro ul.intro-services li a {
-  color: rgba(236, 240, 247, 0.9) !important;
   border-bottom-color: rgba(236, 240, 247, 0.35);
+  color: rgba(236, 240, 247, 0.9) !important;
 }
